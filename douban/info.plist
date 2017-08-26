@@ -19,36 +19,30 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CDAB2300-D582-41E1-BDFA-4D53759F8899</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2BBC3D52-354B-49CD-AD75-AD2DF65B27DC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Dashlorde</string>
 	<key>description</key>
-	<string></string>
+	<string>搜索电影</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>豆瓣搜索</string>
+	<string>douban movie search</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F111A499-7519-4152-81C9-F300035ED3AF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -57,7 +51,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -94,11 +88,101 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F111A499-7519-4152-81C9-F300035ED3AF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>2BBC3D52-354B-49CD-AD75-AD2DF65B27DC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>douban</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>加载中</string>
+				<key>script</key>
+				<string>python new_movie.py </string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>最新上映</string>
+				<key>title</key>
+				<string>最新上映</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CDAB2300-D582-41E1-BDFA-4D53759F8899</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>2BBC3D52-354B-49CD-AD75-AD2DF65B27DC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>280</integer>
+		</dict>
 		<key>61A4C297-7F96-4C4F-8351-5940A76676AB</key>
 		<dict>
 			<key>xpos</key>
@@ -106,12 +190,19 @@
 			<key>ypos</key>
 			<integer>110</integer>
 		</dict>
+		<key>CDAB2300-D582-41E1-BDFA-4D53759F8899</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
 		<key>F111A499-7519-4152-81C9-F300035ED3AF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>530</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>110</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
