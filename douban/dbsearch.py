@@ -6,11 +6,12 @@ from workflow import Workflow, web
 
 logger = None
 
+
 # search movies
 def search(query):
 
     # 编码，支持中文
-    # query = urllib.quote(query.encode('utf8')).decode('utf8')
+    query = urllib.quote(query.encode('utf8')).decode('utf8')
 
     url = "https://api.douban.com/v2/movie/search?q=%s" % query
     r = web.get(url)

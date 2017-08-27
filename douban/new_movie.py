@@ -19,7 +19,7 @@ def new_movie():
 
 
 def main(wf):
-    
+  
     movies = wf.cached_data("new_movie", new_movie, max_age=600)
 
     for movie in movies:
