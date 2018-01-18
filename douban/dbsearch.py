@@ -15,7 +15,7 @@ def search(query):
 
     url = "https://api.douban.com/v2/movie/search?q=%s" % query
     r = web.get(url)
-
+    
     # throw error if request failed
     r.raise_for_status()
 
@@ -40,7 +40,7 @@ def main(wf):
     def wrapper():
         return search(query)
     movies = wf.cached_data(query, wrapper, max_age=600)
-    
+
 
     for movie in movies:
         wf.add_item(uid=movie['id'],

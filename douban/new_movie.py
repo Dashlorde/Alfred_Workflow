@@ -12,7 +12,7 @@ def new_movie():
     movies = []
     data = r.json()
     results = data['subjects']
-
+    
     for movie in results:
         movies.append(movie)
     return movies
